@@ -1,0 +1,43 @@
+@import 'variables';
+
+.dbg {
+	border: solid red 2px;
+}
+
+.bio{
+	min-height: calc(100vh - 50px);
+	margin-top: 50px;
+	padding-top: 30px;
+	// padding-bottom: 30px;
+
+	.grid, code{
+		flex: 1;
+	}
+
+	code{
+		.pad-left{
+			padding-left: 20px;
+		}
+	}
+
+	.bio-hol{
+		width: 70%;
+		margin: 0 auto;
+		border: solid 1px #444;
+		-webkit-transform: skewX(20deg);
+		-moz-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-o-transform: skewX(20deg);
+		transform: skewX(20deg);
+
+		h2{
+			font-size: 24px;
+			margin: 0 0 30px 0;
+		}
+
+		img{
+			@include circle(65px);
+			margin: 0 0 20px 0;
+		}
+	}
+}

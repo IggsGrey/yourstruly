@@ -1,0 +1,10 @@
+{
+    "inputDir": "src/assets/scss",
+    "outputDir": "src/assets/css",
+    "useNpmSass": true,
+    "style":"compressed",
+    "sourcemap":"none",
+    "showStartup":true,
+    "showOutput":true,
+    "showError":true
+}

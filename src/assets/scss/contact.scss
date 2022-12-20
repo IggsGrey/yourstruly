@@ -1,0 +1,49 @@
+@import 'variables';
+
+
+.contact{
+	min-height: calc(100vh - 50px);
+	margin-top: 50px;
+	padding-top: 50px;
+
+	.con-hol{
+		flex: 1;
+		padding: 10px 0;
+
+		.con-hd{
+			margin-bottom: 30px;
+
+			h2{
+				font-size: 50px;
+				margin: 0 0 15px 0;
+			}
+
+			p{
+				margin: 0;
+			}
+		}
+
+		ul.con-bd{
+			opacity: 0;
+			@include transit(opacity, ease, 2s);
+			margin: 0;
+			padding: 0;
+
+			li{
+				list-style-type: none;
+				
+				a{
+					color: #fff;
+				}
+				
+				a:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+
+		ul.con-bd.timedout{
+			opacity: 1;
+		}
+	}
+}

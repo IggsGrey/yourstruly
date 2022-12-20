@@ -1,0 +1,9 @@
+.eslintrc.js
+distributed
+node_modules
+webpack.config.js
+src/assets
+public/assets
+App.test.js
+serviceWorker.js
+setupTests.js

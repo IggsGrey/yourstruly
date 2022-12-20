@@ -1,0 +1,82 @@
+$clr1: #9c297f;
+$clr2: #ca2374;
+$clr3: #e4406f;
+$clr4: #fe9191;
+$clr5: #252830;
+$dividercolor: #e8e9eb;
+
+@mixin bg1($op) {
+	background-color: rgba(156, 41, 127, $op);
+}
+@mixin bg2($op) {
+	background-color: rgba(202, 35, 116, $op);
+}
+@mixin bg3($op) {
+	background-color: rgba(228, 64, 111, $op);
+}
+@mixin bg4($op) {
+	background-color: rgba(254, 145, 145, $op);
+}
+
+@mixin bg5($op) {
+	background-color: rgba(37, 40, 48, $op);
+}
+
+@mixin sf {
+	font-family: 'Passion One', cursive;
+}
+
+@mixin flex-r {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+@mixin flex-ri {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row-reverse wrap;
+}
+@mixin flex-c {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column wrap;
+}
+@mixin flex-ci {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column-reverse wrap;
+}
+@mixin flex-vhc{
+	justify-content: center;
+	align-items: center;
+}
+@mixin transit($who, $speed, $type) {
+	-webkit-transition: $who $speed $type;
+	-moz-transition: $who $speed $type;
+	-ms-transition: $who $speed $type;
+	-o-transition: $who $speed $type;
+	transition: $who $speed $type;
+}
+@mixin bgabso() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@mixin transf($sc1, $sc2) {
+	-webkit-transform: scale($sc1, $sc2);
+	-moz-transform: scale($sc1, $sc2);
+	-ms-transform: scale($sc1, $sc2);
+	-o-transform: scale($sc1, $sc2);
+	transform: scale($sc1, $sc2);
+}
+
+@mixin circle ($rd) {
+	width: $rd;
+	height: $rd;
+	border-radius: $rd;
+}
+
+
+$dbg: solid red 2px;
